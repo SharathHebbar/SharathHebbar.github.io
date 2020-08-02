@@ -50,86 +50,15 @@ display : inline-block;
 padding : 5px;
 }
 
-body {
-    background:green;
-}
-
-#ssh{
-    height:10px;
-    width:10px;
-    position:absolute ;
-    background:orange;
-    border-radius:50%;
-}
-
-#ssh2{
-    height:10px;
-    width:10px;
-    position:absolute;
-    background:yellow;
-    border-radius:50%;
-}
-
-#finish{
-    height :1000px;
-    width:1px;
-    left:300px;
-    position:absolute ;
-    background:blue;
-}
-
 </style>
 <script type="text/javascript">
 function load(){
 alert("Welcome feel free to surf around");
 }
 
-alert("Welcome")
-
-var p1 = prompt("player1 name : ");
-var p2 = prompt("player2 name : ");
-
-var a = Math.floor(Math.random() * 100) + 1 
-var b = Math.floor(Math.random() * 100) + 1 
-
-window.onload = function() {
-
-
-var t = setInterval(move,a);
-var pos =0;
-var ssh = document.getElementById("ssh");
-function move(){
-    if(pos >= 300){
-        clearInterval(t);
-        alert(p1 + " wins");
-        clearInterval(t2);
-    }
-    else{
-        pos+=1
-        ssh.style.left = pos+'px';
-    }
-}
-var t2 = setInterval(move2,b);
-var pos2 =0;
-var ssh2 = document.getElementById("ssh2");
-function move2(){
-    if(pos2 >= 300){
-        clearInterval(t2);
-        alert(p2 + " wins");
-        clearInterval(t);
-    }
-    else{
-        pos2 +=1
-        ssh2.style.left = pos2+'px';
-    }
-}
-}
-
-
 </script>
 </head>
 <body onload="load();">
-
 <br/>
 <br/>
 <hr/>
@@ -161,13 +90,5 @@ For code follow</h2>
 <hr/>
 </h1>
 </center>
-
- <br />
- <div id = "finish"></div>
-    <br />
-        <div id = "ssh"></div>
-        <br/>
-        <div id = "ssh2"></div>
-
 </body>
 </html>
