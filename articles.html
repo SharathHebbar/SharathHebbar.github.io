@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects ideas on github">
+    <meta name="keywords" content="Every tech projects, Arduino projects, Python projects, Project ideas">
+    <meta name="author" content="Sharath Hebbar">
+    <meta property="og:title" content="Project ideas">
+    <meta property="og:description" content="Project ideas">
+    <title>Your Articles</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>Articles</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="https://iblogsdelta.blogspot.com/">Delta</a></li>
+                <li><a href="https://datascienceminds.blogspot.com/">ML Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="articles">
+        <h2>Articles</h2>
+        <br>
+        <article class="article">
+            <h3>
+                1. <a href ="https://medium.com/@sharathhebbar24/feature-extraction-in-cnn-49f955a00cb">
+                    Feature Extraction in CNN
+                </a>
+            </h3>
+            <p>
+                Convolutional Neural Networks (CNNs) are like super-smart detectives for computers. They can recognize things in pictures, like distinguishing between a cat and a dog.<br>
+                However, many times, we remain unaware of what goes on behind the scenes.<br>
+                That's why visualizing CNN models can help us uncover the inner workings of these models, providing insights for model interpretability and aiding in debugging.                
+            </p>
+        </article>
+        <br>
+        <article class="article">
+            <h3>
+                2. <a href ="https://medium.com/@sharathhebbar24/softmax-for-intermediate-cnn-layers-f6d3b8b7d1d2">
+                    Softmax for Intermediate CNN Layers
+                </a>
+            </h3>
+            <p>
+                When you are writing an Image classification CNN model code you often don't think for a second and add in ReLU as an intermediate layer and at the last i.e., classification layer you will add softmax or sigmoid as an activation function. But have you wondered why we won't use the softmax activation function for intermediate layers?? 🤔
+                So if you know the functionalities you might know that it will squash the outputs in the range 0 to 1 and the sum of the output will be 1 to get the probability of the outcomes.<br>
+                The problem with this activation function used in the intermediate layer is that it will lead to a vanishing gradients problem in the sense it makes the weights go zero so that most of the calculation might have a small or no effect on the network.<br>
+                So it is better to use the softmax activation function as a classification layer instead of using it as an intermediate layer.<br>
+            </p>
+        </article>
+        <br>
+        <article class="article">
+            <h3>
+                2. <a href ="https://medium.com/@sharathhebbar24/confounding-variables-bea890410385">
+                    Confounding Variables
+                </a>
+            </h3>
+            <p>
+                A Confounder is a variable whose presence affects the variables being studied so that the results do not reflect the actual relationship. There are various ways to exclude or control confounding variables including Randomization, Restriction, and Matching. <br>
+                A confounding variable is an “extra” variable that you didn't account for. They can ruin an experiment and give you useless results. They can suggest there is a correlation when in fact there isn't. They can even introduce bias. That's why it's important to know what one is, and how to avoid getting them into your experiment in the first place.<br>
+                The independent variable typically has an effect on your dependent variable. For example, if you are researching whether lack of exercise leads to weight gain, then lack of exercise is your independent variable and weight gain is your dependent variable. Confounding variables are any other variable that also has an effect on your dependent variable. They are like extra independent variables that are having a hidden effect on your dependent variables. Confounding variables can cause two major problems:
+
+                (i). Increase variance
+                (ii). Introduce bias.
+            </p>
+        </article>
+
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://medium.com/your-profile" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://www.linkedin.com/in/sharath-s-hebbar-14b541172/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SharathHebbar" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/SharathSHebbar1" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:sharathhebbar24@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
